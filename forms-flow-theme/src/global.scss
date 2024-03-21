@@ -8,7 +8,7 @@
 @import "./components/button.scss";
 
 :root {
-  --color-primary: #0072ed;
+  --color-primary: #002F6C;
   --color-secondary: #6c757d;
   --color-success: #3fb618;
   --color-info: #4d61fc;
@@ -36,8 +36,8 @@
   --color-gray-900: #212529;
   --color-main-bg: #F7F7F7;
   --head-inactive: #909090;
-  --logo-path: "./logo.svg";
-  --logo-width: 40px;
+  --logo-path: "./logo.png";
+  --logo-width: 200px;
   --appname-margin-left: 0px;
   --appname-margin-right: 0px;
   --appname-margin-top: 0px;
@@ -72,10 +72,14 @@
   color: var(--color-primary) !important;
 }
 
-
+.text-link {
+  color: var(--color-gray-600);
+}
 
 .footer-text {
-  font-size: 18px;
+  font-size: 10px;
+  text-align: right;
+  color: var(--color-gray-600);
 }
 
 .btn-primary { 
@@ -83,8 +87,8 @@
 }
 
 .btn-outline-primary:not(:disabled) {
-  border-color: #0071eb;
-  color: #0071eb;
+  border-color: #002F6C;
+  color: #002F6C;
 }
 
 .btn-outline-primary:not(:disabled):hover {

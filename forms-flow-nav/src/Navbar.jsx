@@ -36,7 +36,7 @@ const NavBar = React.memo(({ props }) => {
   const [tenantLogo, setTenantLogo] = React.useState("/logo_skeleton.svg");
   const defaultLogoPath =
     document.documentElement.style.getPropertyValue("--navbar-logo-path") ||
-    "/logo.svg";
+    "/logo.png";
   React.useEffect(() => {
     props.subscribe("FF_AUTH", (msg, data) => {
       setInstance(data);
@@ -79,7 +79,7 @@ const NavBar = React.memo(({ props }) => {
     const data = JSON.parse(StorageService.get("TENANT_DATA"));
     if (data?.details) {
       setApplicationTitle(data?.details?.applicationTitle);
-      setTenantLogo(data?.details?.customLogo?.logo || "/logo.svg");
+      setTenantLogo(data?.details?.customLogo?.logo || "/logo.png");
     }
   }, [tenant]);
 
@@ -177,7 +177,7 @@ const NavBar = React.memo(({ props }) => {
                 src={logoPath}
                 alt="Logo"
               />
-              <div className="custom-app-name">{appName}</div>
+              {/* <div className="custom-app-name">{appName}</div> */}
             </Navbar.Brand>
             {isAuthenticated && <Navbar.Toggle aria-controls="responsive-navbar-nav" />}
              
