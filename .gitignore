@@ -70,3 +70,6 @@ dist
 *.sln
 *.sw?
 .DS_Store
+
+# PlaidCloud-specific ignore rules
+output/
