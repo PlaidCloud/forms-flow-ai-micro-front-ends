@@ -16,6 +16,7 @@ module.exports = (webpackConfigEnv, argv) => {
       },
       port: 3006
     },
+    devtool: 'source-map',
     output:{
       filename:"forms-flow-admin.js"
     },
