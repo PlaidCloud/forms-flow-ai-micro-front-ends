@@ -37,7 +37,7 @@ import Keycloak, {
     };
   
     private login(): void {
-      this.kc?.login();
+      this.kc?.login({scope: "openid roles"});
     }
   
     private logout(): void {
