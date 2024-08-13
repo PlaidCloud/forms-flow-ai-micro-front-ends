@@ -31,6 +31,7 @@ import Keycloak, {
      */
     private keycloakInitConfig: KeycloakInitOptions = {
       onLoad: "check-sso",
+      scope: "openid roles",
       silentCheckSsoRedirectUri: `${window.location.origin}/silent-check-sso.html`,
       pkceMethod: "S256",
       checkLoginIframe: false,
